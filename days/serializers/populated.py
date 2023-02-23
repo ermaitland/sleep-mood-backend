@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from ..models import Days
 from sleep.serializers.common import MoodSerializer
+from .common import DaysSerializer
 
-class PopulatedDaysSerializer(serializers.ModelSerializer):
-    mood = MoodSerializer
+class PopulatedDaysSerializer(DaysSerializer):
+    mood = MoodSerializer()

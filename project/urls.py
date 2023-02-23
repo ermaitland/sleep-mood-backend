@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/auth/', include('jwt_auth.urls')),
     path('api/mood/', include('sleep.urls')),
+    path('api/days/', include('days.urls')),
 ]
