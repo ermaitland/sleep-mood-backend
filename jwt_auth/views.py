@@ -40,3 +40,5 @@ class LoginView(APIView):
             algorithm='HS256'
         )
         return Response({'token': token, 'message': f"Welcome back {user_to_login.username}"})
+
+        # field_name = models.IntegerField(**options)
