@@ -15,6 +15,7 @@ class DaysListView(APIView):
     def get(self, request):
         is_staff = request.user.is_staff
         is_user = request.user.id
+        print("REQUEST BY", request.user.id)
         if is_staff:
             days = Days.objects.all()
         else: 
